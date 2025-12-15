@@ -1,0 +1,17 @@
+body{ margin: 0;}
+section{ display: flex; flex-direction: column; 
+    align-items: center; height: 100vh; 
+    justify-content: center; background-color: rgb(139, 96, 96);
+}
+div{ display: none;}
+@media (max-width: 480px) 
+{ section{ background-color: rgb(46, 78, 89);} 
+.mobile{display:inherit;} }
+@media (min-width: 481px)and (max-width: 768px) 
+{ section{ background-color: lightblue;}
+.low-tablet{ display: flex;} }
+@media (min-width: 769px) and (max-width: 1024px) 
+{ section{ background-color: lightgreen;}   }
+@media (min-width: 1025px) 
+{ section{ background-color: lightcoral;} 
+.low-pc{ display: flex;} } 

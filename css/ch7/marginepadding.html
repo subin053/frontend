@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 20px 40px 10px 5px;
+            padding: 10px 20px 5px 0;
+            border: 1px dashed #000;
+            content: icon;
+        }
+        .special {
+            margin: auto;
+            width: 50%;
+            border: 2px dashed blue;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        margin과 padding은 -top, -bottom, -left, -right로 세부 설정이 가능합니다.<br>
+        margin은 요소 바깥 여백, padding은 요소 안쪽 여백을 설정합니다.<br>
+        margin과 padding은 4가지 방식으로 설정할 수 있습니다.<br>  
+        1) 한 값으로 설정: 네 방향 모두 동일한 값이 적용됩니다.<br>
+        2) 두 값으로 설정: 첫 번째 값은 상하, 두 번째 값은 좌우에 적용됩니다.<br>
+        3) 세 값으로 설정: 첫 번째 값은 상, 두 번째 값은    좌우, 세 번째 값은 하에 적용됩니다.<br>
+        4) 네 값으로 설정: 시계방향(상, 우, 하, 좌)으로 각각 적용됩니다.<br>    
+        5) 음수 값도 설정할 수 있습니다. 음수 margin은 요소를 겹치게 만들 수 있지만, 음수 padding은 요소의 내용을 잘라내지는 않습니다.<br>  
+        6) margin과 padding은 퍼센트(%) 단위로도 설정할 수 있습니다. 이 경우 margin은 부모 요소의 너비를 기준으로, padding은 부모 요소의 너비를 기준으로 계산됩니다.<br>    
+        7) auto 값은 margin에서만 사용되며, 주로 수평 중앙 정렬에 사용됩니다.<br>       
+    </p>
+    <p class="special"> 이를테면 이런상황에서 유용하죠</p>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--flex-direction속성
+-column:정방향이 세로방향이면 크로스방향은 가로방향
+-row:정방향이 가로방향이면 크로스방향은 세로방향
+-column-reverse:정방향이 세로방향이면 크로스방향은 가로방향인데 역순으로 배치
+-row-reverse:정방향이 가로방향이면 크로스방향은 세로방향인데 역순으로 배치 
+
+-flex-wrap속성
+- nowrap(기본값):한줄로 배치
+- wrap: 여러줄로 배치
+- wrap-reverse: 여러줄로 배치하는데 역순으로 배치
+
+정방향(메인축)컨트롤은 justify-content 속성으로 조정
+- flex-start(default): 정방향의 시작위치로 붙는다.
+- flex-end:정방향의 끝 위치로 붙는다.
+- center: 중앙정렬
+- space-evenly: 간격이 모두 동일
+-space-between: 첫 자식과 마지막 자식은 양쪽끝에 붙고 나머지는 간격이 모두동일
+- space-around: 자식의 양쪽간격이 모두 동일하다 자식간에는 중첩
+    
+    크로스 방향(크로스축) 컨트롤은 align-items 속성으로 조정
+    - stretch(default):남는 공간을 모두 차지한다.
+    - flex-start:크로스방향의 시작위치로 붙는다.
+    - flex-end:크로스방향의 끝 위치로 붙는다.
+    - center:중앙정렬
+    - baseline: 요소들을 컨테이너의 시작 위치에 정렬합니다. -->
+<style>
+        .container{ display: flex;flex-directtion: row; flex-wrap: wrap; justify-content: space-between;
+    align-items: center; 
+            background-color: lightgray;
+    width: 600px; height: 400px; }
+    .container>div{ background-color: lightcoral; min-width: 47px;
+        min-height: 48px; padding: 12px; border : 2px solid rgb(35, 168, 20);}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        </div>
+</body>
+</html>

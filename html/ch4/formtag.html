@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./01-result.html" method="get">
+        <label for="name">이름:</label><!-- 텍스트클릭시 포커스가 가기위함-->
+        <input type="text" id="name" name="my-name" ><br><br>
+    
+        <label for="age">나이:</label>
+        <input type="number" id="number" name="my-age" max="100" ><br><br>
+        취미
+        <label><input type="checkbox" name="hobby" value="reading">독서 </label>
+        <label><input type="checkbox" name="hobby" value="walking">산책 </label>
+        <label><input type="checkbox" name="hobby" value="sleep">낮잠 </label><br><br>
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+</body>
+</html>

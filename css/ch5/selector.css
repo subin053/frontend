@@ -1,0 +1,13 @@
+
+*{ font-weight: bold; color: red;}
+p { color: rgb(182, 53, 143);}
+.blue { color: blue;}
+p.blue { color: green;}
+/* p태그이면서 class가 blue인 요소를 초록색으로 지정 */
+.blue.dark { color: navy;}
+/* class가 blue이면서 dark인 요소를 남색으로 지정 */
+#red { color: rgb(30, 156, 146);}
+/* id선택자는 우선순위가 굉장히높다*/
+
+span, .dark, #red {text-decoration: underline;}
+/*  그룹선택자 span, class가 dark, id가 red인 요소에 밑줄적용 */

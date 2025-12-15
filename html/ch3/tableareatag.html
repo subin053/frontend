@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style> 
+        td,th,table { border: 3px solid hsl(325, 52%, 38%); text-align:left;
+        padding: 20px;}
+        caption {font-size: 26px; font-weight: bolder; margin-bottom: 10px; caption-side: top;}
+    thead {background-color: #f4cccc;}
+    tfoot {background-color: #f5d8f3;}  
+    </style>
+</head>
+<body>   <!--head=제목 body=본문 footer=결산 -->
+    <table border="2" width="350px"  height="30px">
+        <!--scope=어떤것의 제목인지를 지정 col=열을 대표 row=행을 대표-->
+        <caption>text </caption>
+        <thead> 
+            <tr>
+                <th scope="col" >subject</th>
+                <th scope="col" >mon</th>
+                <th scope="col" >tue</th>
+                <th scope="col" >wen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">html</th>
+                <td>60M</td>
+                <td>30M</td>
+                <td>0M</td>
+            </tr>
+            <tr>
+                <th scope="row">css</th>
+                <td>50M</td>
+                <td>20M</td>
+                <td>10M</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">sum</th>
+                <td>110M</td>
+                <td>50M</td>
+                <td>10M</td>
+            <tr>
+                <td colspan="4">total: 170M</td>
+            </tr>
+    </table>
+    
+</body>
+</html>

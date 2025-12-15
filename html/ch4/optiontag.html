@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 옵션들을 사용하는 태그</h1>
+    <form action="#">
+        <label>
+            언어
+            <select name="lang" >
+            <option>-----</option>
+            <option>html</option>
+            <option>java</option>
+            <option>css</option>
+            </select>
+        </label><br><br>
+        <label>
+            쇼핑목록
+            <select name="shopping">
+            <optgroup label="과일">
+                <option value="1">사과</option>
+                <option value="2">바나나</option>
+                <option value="3">포도</option>
+                <option value="4">오렌지</option>
+            </optgroup>
+            <optgroup label="채소">
+                <option value="5">당근</option>
+                <option value="6">토마토</option>
+                <option value="7">가지</option>
+            </optgroup></select>
+        </label><br><br>
+
+        <label>
+            현재 직업
+            <input list="job" name="jobname">
+            <datalist id="job">
+                <option value="학생"></option>
+                <option value="개발자"></option>
+                <option value="디자이너"></option>
+                <option value="마케터"></option>
+                <option value="기획자"></option>
+        </label><br>
+        <button> 제출</button></form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body{ margin: 0; }
+        main{ display: grid; gap: 10px;  grid-template-columns: 150px 1fr 200px; grid-template-rows: 80px 150px 350px 170px;
+        grid-template-areas: 
+        "nav nav nav"
+        "aside section1 section1"
+        "aside section2 section3"
+        "footer footer footer"
+        ;}
+        nav{ grid-area: nav; background-color: aliceblue;}
+        aside{ grid-area: aside; background-color: aliceblue; }
+        .section1{ grid-area: section1;background-color: aliceblue; }
+        .section2{ grid-area: section2;background-color: aliceblue;}
+        .section3{ grid-area: section3;background-color: aliceblue; }
+        footer{ grid-area: footer;background-color: aliceblue;}
+        .section2 div{margin: 1em; padding: 1em; background-color: #fff; height: 250px; }
+    </style>
+</head>
+<body>
+    <main>
+        <nav> nav</nav>
+        <aside>aside</aside>
+        <section class="section1">section1</section>
+        <section class="section2">section2<div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.br <br>
+            Quasi officia mollitia quidem rerum fugiat! Ducimus explicabo<br>
+            illo labore iste natus.<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.br <br>
+            Quasi officia mollitia quidem rerum fugiat! Ducimus explicabo<br>
+            illo labore iste natus.<br>
+
+        </div></section>
+        <section class="section3">section3</section>
+        <footer>footer</footer>
+    </main>
+</body>
+</html>
