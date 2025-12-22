@@ -57,3 +57,13 @@ function star(n1){
 }
 console.log(star(7));
 
+
+console.log('--------square');
+
+
+function square (n1){
+    let q=''
+    for(w=0; w<n1;w++){q+='*'}
+    for(let i=0; i<n1; i++){console.log(q);}
+}
+square(4)
