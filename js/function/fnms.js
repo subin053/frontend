@@ -67,3 +67,4 @@ function square (n1){
     for(let i=0; i<n1; i++){console.log(q);}
 }
 square(4)
+
