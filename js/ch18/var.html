@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1> var</h1>
+    <script>
+        /* 변수랑 상수는 값을 담는 공간
+        변수는 값을 계속 변경할수있고(읽기 및 쓰기 가능)
+        상수는 한번 값을 담으면 변경할수없음(읽기만 가능)
+        */
+    // =은 대입연산자라고 부르며, 오른쪽의 값을 왼쪽에 할당(담다)하는 역할
+        
+    // var는 변수선언 키워드(요즘은 잘안씀)
+        let name = 'kimsubin'; //'',""로 감싸면 문자열이된다
+        //let은변수선언 키워드 최초1번사용
+        // name은 변수명, 변수명네이밍을 준 공간을 만들었다
+        //선언과 동시에 값을 할당(담기)
+        //최초1번선언(초기화)후에는 =대입연산자를 사용해서 값 변경가능
+        name = 'hello'; //변수에 새로운값 할당(변경)
+        console.log(name);//변수에 저장된 값 읽기
+        const pi = 3.14; //숫자형 따옴표x 
+        // const는 상수선언 키워드 초기화이후 값변경 불가능
+        console.log(pi);
+        //pi = 3.14159; //에러발생 상수는 값 변경불가   
+        //변수선언 여러개를 한번에 하는것도 가능
+        let a = 10, b = 20, c = '30', d = '40';
+        let result = a + b/5; //식이 있으면 결과값으로 저장 a+b/5 = 10+20/5
+        let result2 = c + d;//문자열+문자열 30'+'40'='3040'
+        let result3 = a + c;//숫자+문자열 타입이 다르면 연산불가
+        //양쪽 타입이 같도록 문자열로 변환후 연산
+        let result4 = a+b+c ;//10+20+'30' = '3030' //연산순서대로 연산해줌
+        console.log('result',result);
+        console.log(result2);
+        //mod,% 나머지 연산자 나누었을때 나머지값 구할때 사용
+    console.log(10%3) //10나누기3 나머지1
+    console.log(10/2) //10나누기2 몫5
+        </script>
+</body>
+</html>

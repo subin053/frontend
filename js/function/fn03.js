@@ -1,0 +1,18 @@
+/*
+함수는 한가지 일만 하도록 정의를 한다. 그래야 재활용성이 높다
+함수가 함수를 호출할수 있다
+나자신을 호출할수도있다
+*/
+
+function add(n1,n2){
+    return n1+n2;
+}
+
+function pow(num){
+    return num*num;
+}
+
+function addandpow(n1,n2){
+    const result =add (n1,n2);
+    return pow (result);
+} 
