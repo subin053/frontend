@@ -7,20 +7,23 @@
 </head>
 <body>
     <h1>ICON EDITOR</h1>
+<ul>
+    <li>
 
+    </li>
+</ul>
     <div id="editor"> </div>
     
-
     <script>
         //엘리먼트 생성함수
         //첫번째파라미터: 태그명 두번째파라미터: 객체
         function makeElement( name, attributes){
             const node = document.createElement(name); //요소를 추가하겠다
-
+            
             if( attributes){ for( const item in attributes ) {
                     node.setAttribute(item, attributes[item]); //속성을
                 }
-
+            
             }
             return node;
         }
