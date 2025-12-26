@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="page"></div>
+
+    <script>
+        const makepage = () =>{
+        for(let i=1; i<11; i++){
+            const pg = document.createElement('span');
+            const $page = document.querySelector('#page')
+            $page.append(pg);
+            pg.innerText = `${i}`;
+            pg.addEventListener( 'click', () =>{
+                getdata(i);
+            } )
+        }
+        }
+        makepage()
+        const  getdata = page =>{
+            fetch(`https://picsum.photos/v2/list?limit=50&page=${page}`)
+            .then(res=> res.json())
+            .then(res=> procItems(res))
+            .catch(err=> console.log(err))
+        }
+        const procItems = list => {
+            
+            const $container = document.querySelector('#container');
+
+            list.forEach( (item, i) => {
+                const elem = makeItem(item);
+                $container.append(elem);
+            } );
+        }
+        const obj = {
+            name: '홍길동',
+            age: 22,
+            height: 168.4
+        }
+        
+        
+        const makeItem = data => {
+            console.log('data:', data);
+            const div = document.createElement('div');
+            
+            div.innerHTML= `
+            <img src = "https://picsum.photos/id/${data.id}/500/333" alt="${data.author}">
+            <div></div>`;
+            return div;
+        }
+        const jsonObj = JSON.stringify(obj);
+        console.log('jsonObj:', jsonObj);
+        const obj2 = JSON.parse(jsonObj);
+        console.log('obj2:', obj2);
+    </script>
+</body>
+</html>

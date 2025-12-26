@@ -18,8 +18,11 @@ promiseㅣ 생성자 함수
 let val =10;
 const p1 = new promise( (resolve, reject) => {
     if(val%2 ) { 
-        resolve;
+        resolve;//then메소드호출
     }else{
-        reject;
+        reject;//catch메소드호출
     }
 }); //p1에는 promise 객체 주소값 저장
+p1
+.then( item => console.log('then-item:', item) ) 
+.catch( item => console.log('catch-item:', item) );
